@@ -58,7 +58,7 @@
                 <h3 class="font-popo text-[16px] leading-6">Total:</h3>
                 <h3 class="font-popo text-[16px] leading-6">${{ subtotal }}</h3>
             </div>
-           <RouterLink to="/checkout"><button type="submit" class="bg-[#dbd0a7e3] font-popo text-[16px] font-medium text-gray-500 cursor-pointer rounded-[4px] py-4 px-12 mt-4 flex mx-auto">Proceed to checkout</button></RouterLink> 
+           <RouterLink to="/checkout"><button type="submit" class="bg-[#dbd0a7e3] font-sig text-[16px] font-medium text-gray-500 cursor-pointer rounded-[4px] py-4 px-12 mt-4 flex mx-auto">Proceed to checkout</button></RouterLink> 
         </div> 
         </div>
         </div>

@@ -1,6 +1,6 @@
 <template>
 
-<section class="animal_photography py-[50px]">
+<section class="photography py-[50px]">
     <div class="container">
         <div class="flex space-x-12 flex-wrap gap-y-15">
             <div class="w-1/5" v-for="photo in photos" >

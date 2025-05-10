@@ -1,7 +1,6 @@
 <template>
  
 <section class="">
-
 <div class="flex">
     <div class="w-1/2 py-[150px] px-20 bg-cover bg-center bg-[url('https://images.pexels.com/photos/13312438/pexels-photo-13312438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
         <h2 class="font-sig font-semibold text-3xl text-white">Welcome To Our Community!</h2>
@@ -29,7 +28,7 @@
         </div>
         </div>
         <div>
-            <button type="submit" class="font-sig text-[16px] text-white text-center hover:bg-white hover:text-gray-500 font-semibold hover:border-1 hover:border-[rgba(0,0,0,0.3)] px-10 py-3 rounded-2xl mt-5 bg-[rgba(0,0,0,0.3)]">Login</button>
+            <button type="submit" class="bg-[#dbd0a7e3] font-sig text-[16px] font-semibold text-gray-500 cursor-pointer rounded-[4px] py-4 px-12 mt-4">Login</button>
             <p class="font-sig font-semibold text-[12px] text-gray-500 py-5 pr-[300px]">Don't have an account? <a href="" class="font-sig font-semibold text-[12px] text-blue-400 py-5">Create a free account</a> </p>
         </div>
     </form>

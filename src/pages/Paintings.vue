@@ -2,19 +2,19 @@
 
     <section class="photography py-[50px]">
     <div class="container">
-        <div class="flex space-x-10 flex-wrap gap-y-5">
+        <div class="flex space-x-12 flex-wrap gap-y-15">
             <div class="w-1/5" v-for="painting in paintings" >
-                <div class="relative group:hover">
-                    <div class="item text-center py-10 px-5 border-1 border-gray-400 bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] rounded-[4px] shadow-2xl">
+                <div class="relative group:hover hover:scale-125 transition delay-100 cursor-pointer">
+                    <div class="item bg-transparent text-center py-10 px-5 border-1 border-gray-400 bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] rounded-[4px] shadow-2xl">
                     <img :src="painting.image">
                     <h3 class="text-[16px] font-sig font-semibold pt-3">{{ painting.name }}</h3>
                 <h3 class="text-[14px] font-sig font-semibold">By {{ painting.artist }}</h3>
                 <h3 class="text-[14px] font-sig font-semibold">${{ painting.price }}</h3>
                 </div>
-                <div class="hover:visible overlay bg-[rgba(0,0,0,0.5)] absolute top-0 left-0 w-full h-full">
+                <div class="group-hover:transition overlay opacity-0 hover:opacity-100 bg-[rgba(0,0,0,0.5)] absolute top-0 left-0 w-full h-full">
                     <div class="icons absolute top-[50%] left-[30%] -translate[-50%]">
                 <RouterLink to="product_description"><i class="fa-solid fa-plus text-white px-3 hover:text-[#e8ddc5] shadow-2xl"></i></RouterLink> 
-                <RouterLink><i class="fa-solid fa-bag-shopping text-white px-3 hover:text-[#e8ddc5] shadow-2xl"></i></RouterLink> 
+                <RouterLink to="/cart"><i class="fa-solid fa-bag-shopping text-white px-3 hover:text-[#e8ddc5] shadow-2xl"></i></RouterLink> 
                 <RouterLink><i class="fa-solid fa-heart text-white px-3 hover:text-red-400 shadow-2xl"></i></RouterLink>  
                     </div>
             </div>
