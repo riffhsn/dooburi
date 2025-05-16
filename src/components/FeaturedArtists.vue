@@ -8,8 +8,8 @@
                         <div class="w-fit" v-for="featuredartist in featuredartists" :key="featuredcoll">
         <div class="shadow-black shadow-2xl relative rounded-[10px]">
             <img :src="featuredartist.image" class="rounded-[10px]  w-[400px] h-[400px]">
-            <RouterLink class="absolute top-[50%] left-[50%] -translate-[50%] flex mx-auto text-center text-white text-xl bg-[rgba(0,0,0,0.6)] py-3 px-5 rounded-2xl">{{featuredartist.name}}</RouterLink>
-            <RouterLink class="absolute top-[65%] left-[50%] -translate-[50%] flex mx-auto text-center text-white text-xl bg-[rgba(0,0,0,0.6)] py-3 px-5 rounded-2xl">{{featuredartist.profession}}</RouterLink>
+            <RouterLink to="/artists" class="absolute top-[50%] left-[50%] -translate-[50%] flex mx-auto text-center text-white text-xl bg-[rgba(0,0,0,0.6)] py-3 px-5 rounded-2xl">{{featuredartist.name}}</RouterLink>
+            <RouterLink to="/artists" class="absolute top-[65%] left-[50%] -translate-[50%] flex mx-auto text-center text-white text-xl bg-[rgba(0,0,0,0.6)] py-3 px-5 rounded-2xl">{{featuredartist.profession}}</RouterLink>
         </div>
     </div>
         </div>
