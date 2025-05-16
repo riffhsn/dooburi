@@ -15,11 +15,10 @@
                 <RouterLink to="/sculptures"><li><a>Sculptures</a></li></RouterLink>
                 </ul>
                 </li>
-              <RouterLink to="/artists"><li><a>Artists</a></li></RouterLink>
-             <RouterLink><li><a>Featured Collections</a></li></RouterLink>  
-             <RouterLink><li><a>Videos</a></li></RouterLink>  
+              <li><a>Artists</a></li>
+             <li><a>Featured Collections</a></li>
+             <li><a>Videos</a></li>
              <li> <a href="#">Blogs</a> </li>
-
             </ul>
             <div>
         <form action="" method="" class="flex justify-end">
