@@ -14,6 +14,10 @@
                         <input type="text" placeholder="Enter Your Full Name" class="text-[16px] leading-6 pb-2 focus:outline-0 w-[370px] border-b-2 border-[rgba(0,0,0,0.3)]">
                     </div>
                     <div>
+                        <label class="font-sig text-[14px] text-black font-semibold block py-3">Address<span class="text-red-400">*</span></label>
+                        <input type="text" placeholder="Enter Your Full Address" class="text-[16px] leading-6 pb-2 focus:outline-0 w-[370px] border-b-2 border-[rgba(0,0,0,0.3)]">
+                    </div>
+                    <div>
                         <label class="font-sig text-[14px] text-black font-semibold block py-3">Email Address<span class="text-red-400">*</span></label>
                         <input type="email" placeholder="Enter Your Email Address" class="text-[16px] leading-6 pb-2 focus:outline-0 w-[370px] border-b-2 border-[rgba(0,0,0,0.3)]">
                     </div>
@@ -25,7 +29,7 @@
                         <label class="font-sig text-[14px] text-black font-semibold block py-3">Confirm Password<span class="text-red-400">*</span></label>
                         <input type="password" placeholder="Confirm Password" class="text-[16px] leading-6 pb-2 focus:outline-0 w-[370px] border-b-2 border-[rgba(0,0,0,0.3)]">
                     </div>
-                    <button type="submit" class="bg-[#DB4444] py-4 px-[120px] rounded-[4px] text-white text-[16px] font-sig leading-6 mt-[40px]">Create Account</button>
+                  <button type="submit" class="bg-[#DB4444] py-4 px-[120px] rounded-[4px] text-white text-[16px] font-sig leading-6 mt-[40px]">Create Account</button>
                     <div class="googlesignup_btn">
                         <button type="submit" class="flex justify-center border-1 border-[rgba(0,0,0,0.4)] py-4 px-[86px] mt-4 rounded-[4px]">
                             <img :src="googlesignup" class="pr-4"><p class="font-sig text-[16px] leading-6">Sign up with Google</p></button>

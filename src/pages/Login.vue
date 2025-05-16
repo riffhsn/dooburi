@@ -29,7 +29,7 @@
         </div>
         <div>
             <button type="submit" class="bg-[#dbd0a7e3] font-sig text-[16px] font-semibold text-gray-500 cursor-pointer rounded-[4px] py-4 px-12 mt-4">Login</button>
-            <p class="font-sig font-semibold text-[12px] text-gray-500 py-5 pr-[300px]">Don't have an account? <a href="" class="font-sig font-semibold text-[12px] text-blue-400 py-5">Create a free account</a> </p>
+            <p class="font-sig font-semibold text-[12px] text-gray-500 py-5 pr-[300px]"> Don't have an account? <RouterLink to="/user" class="font-sig font-semibold text-[12px] text-blue-400 py-5">Create a free account</RouterLink> </p>
         </div>
     </form>
     </div>

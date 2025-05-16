@@ -1,5 +1,5 @@
 <template>
-<section class="subscribe py-20 bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
+<section class="subscribe py-20 bg-center bg-cover bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
 <div class="container">
 <div class="subscribe_header">
     <h2 class="font-sig font-semibold text-3xl text-black text-center flex justify-center py-5">SUBSCRIBE To Our Newsletter</h2>

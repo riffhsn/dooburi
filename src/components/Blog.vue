@@ -1,17 +1,17 @@
 <template>
 
-<section class="blog py-[100px] px-[50px] bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
+<section class="blog py-[50px] px-[50px] bg-center bg-cover bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
     <h2 class="text-center text-6xl animate-pulse py-10">Blogs</h2>
     <div class="flex gap-x-10">
         <div v-for="blog in blogs" :key="blog" class="relative">
-            <div class="blog_date text-black pb-3">{{ blog_date }}</div>
             <div >
                 <img :src="blog.image">
             </div>
-            <div class="absolute top-[50%] left-[50%] -translate-[50%] text-center px-5 py-10 bg-[rgba(0,0,0,0.3)]">
+            <div class="blog_text w-[300px] absolute top-[12%] left-[16%] text-center px-5 py-10 bg-[rgba(0,0,0,0.3)]">
         <h3 class="font-sig text-[16px] font-semibold text-white">{{blog.title}}</h3>
         <h3 class="font-sig text-[14px] font-normal text-white">By {{ blog.contributor }}</h3>
         <a href="" class="text-white font-sig text-[14px]">Read More..</a> 
+        <h3 class="font-sig text-white text-[12px] mt-4">Published:{{ blog_date }}</h3>
             </div>
     </div>
     </div>

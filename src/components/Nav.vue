@@ -5,13 +5,21 @@
         <div class="flex justify-between items-center">
             <div class="logo w-[1/5]">
 </div>
-        <div class="menu w-[2/5] items-center flex justify-start space-x-20">
+        <div class="menu absolute w-[2/5] items-center flex justify-start space-x-20">
             <ul class="flex space-x-5 font-sig font-semibold text-gray-500 text-[16px]">
               <RouterLink to="/"> <li><a>Home</a></li> </RouterLink>
-               <RouterLink to="/paintings"> <li><a>Paintings</a></li> </RouterLink>
+                <li><a href="">Artworks</a>
+                <ul class="hidden hover:visible delay-75">
+                <RouterLink to="/paintings"> <li><a>Paintings</a></li> </RouterLink>
                 <RouterLink to="/photography"> <li><a>Photographs</a></li> </RouterLink>
-               <RouterLink to="/sculptures"><li><a>Sculptures</a></li></RouterLink>
-              <RouterLink to="/artists"><li><a>Artists</a></li></RouterLink>  
+                <RouterLink to="/sculptures"><li><a>Sculptures</a></li></RouterLink>
+                </ul>
+                </li>
+              <RouterLink to="/artists"><li><a>Artists</a></li></RouterLink>
+             <RouterLink><li><a>Featured Collections</a></li></RouterLink>  
+             <RouterLink><li><a>Videos</a></li></RouterLink>  
+             <li> <a href="#">Blogs</a> </li>
+
             </ul>
             <div>
         <form action="" method="" class="flex justify-end">
@@ -34,7 +42,6 @@
 </div>
     </div>
     </div>
-
 </section>
 </template>
 

@@ -4,10 +4,13 @@
 <Categories></Categories>
 <About></About>
 <FeaturedCollections></FeaturedCollections>
+<FeaturedArtists></FeaturedArtists>
 <Countdown_section></Countdown_section>
+<Videos></Videos>
+<News></News>
 <Blog></Blog>
 
-<section class="testimonial pb-20 pt-10 bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
+<section class="testimonial pb-20 pt-10 bg-cover bg-center bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
 <div class="container">
     <div class="testimonial_heading">
         <h2 class="text-4xl font-bold text-center pb-10">Here's what our members are saying about us!</h2>
@@ -72,5 +75,8 @@ import Blog from '@/components/Blog.vue';
 import Countdown from '@/components/Countdown.vue';
 import Countdown_section from '@/components/Countdown_section.vue';
 import Newsletter from '@/components/Newsletter.vue'
+import News from '@/components/News.vue';
+import FeaturedArtists from '@/components/FeaturedArtists.vue';
+import Videos from '@/components/Videos.vue';
 
 </script>
