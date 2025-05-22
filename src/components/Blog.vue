@@ -2,8 +2,7 @@
 
 <section class="blog py-[20px] md:py-[50px] px-[50px] bg-center bg-cover bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
     <h2 class="text-center text-5xl md:text-6xl animate-pulse py-10">Blogs</h2>
-    <div class="grid sm:grid-cols-1">
-            <div class="flex gap-x-10 ">
+            <div class="flex gap-x-10">
         <div v-for="blog in blogs" :key="blog" class="relative">
             <div >
                 <img :src="blog.image">
@@ -14,7 +13,6 @@
         <a href="" class="text-white font-sig text-[14px]">Read More..</a> 
         <h3 class="font-sig text-white text-[12px] mt-4">Published:{{ blog_date }}</h3>
             </div>
-    </div>
     </div>
     </div>
 
@@ -39,6 +37,7 @@ const blogs = ref([{
     contributor: 'John Doe',
     description: 'This week, we’re responding to an artist who’s been making art for years—but finds themselves exhausted by the pressure to turn it into a business. They’re wondering if they’re even cut out for this, struggling with burnout, pricing, and questioning whether their work still matters in a world that feels increasingly disconnected from the value of human-made art. ',
 },
+
 {
     id: '3',
     image: 'https://images.pexels.com/photos/7655645/pexels-photo-7655645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -46,6 +45,7 @@ const blogs = ref([{
     contributor: 'Paul Taylor',
     description: 'This week, we’re responding to an artist who’s been making art for years—but finds themselves exhausted by the pressure to turn it into a business. They’re wondering if they’re even cut out for this, struggling with burnout, pricing, and questioning whether their work still matters in a world that feels increasingly disconnected from the value of human-made art. ',
 }, 
+
 {
     id: '4',
     image: 'https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',

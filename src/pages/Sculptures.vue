@@ -13,9 +13,9 @@
                 </div>
                 <div class="group-hover:transition overlay opacity-0 hover:opacity-100 bg-[rgba(0,0,0,0.5)] absolute top-0 left-0 w-full h-full">
                     <div class="icons absolute top-[50%] left-[30%] -translate[-50%]">
-                <RouterLink to="product_description"><i class="fa-solid fa-plus text-white px-3 hover:text-[#e8ddc5] shadow-2xl"></i></RouterLink> 
+                <RouterLink to="/product_description"><i class="fa-solid fa-plus text-white px-3 hover:text-[#e8ddc5] shadow-2xl"></i></RouterLink> 
                 <RouterLink to="/cart"><i class="fa-solid fa-bag-shopping text-white px-3 hover:text-[#e8ddc5] shadow-2xl"></i></RouterLink> 
-                <RouterLink><i class="fa-solid fa-heart text-white px-3 hover:text-red-400 shadow-2xl"></i></RouterLink>  
+                <RouterLink to="/wishlist"><i class="fa-solid fa-heart text-white px-3 hover:text-red-400 shadow-2xl"></i></RouterLink>  
                     </div>
             </div>
                 </div>  

@@ -4,6 +4,7 @@
 <div class="flex">
     <div class="w-1/2 py-[150px] px-20 bg-cover bg-center bg-[url('https://images.pexels.com/photos/13312438/pexels-photo-13312438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
         <h2 class="font-sig font-semibold text-3xl text-white">Welcome To Our Community!</h2>
+        <p class="font-sig text-white font-semibold py-3 pr-20 text-justify">Welcome to Dooburi! The hub for art enthusiasts and artists. Join our community and enter the world of art. This is a digital platform where artists exhibit their art pieces and art enthusiasts can collect their favorite artworks. Engage with our community and stay connected to your inner artist. </p>
     </div>
     <div class="w-1/2 py-[100px] px-[100px]">
         <h2 class="font-sig font-semibold text-3xl text-black py-5">Welcome Back!</h2>
