@@ -7,7 +7,7 @@
             <div >
                 <img :src="blog.image">
             </div>
-            <div class="blog_text md:w-[300px] absolute top-[12%] left-[16%] text-center px-5 py-10 bg-[rgba(0,0,0,0.3)]">
+            <div class="blog_text w-[300px] absolute top-[12%] left-[16%] text-center px-5 py-10 bg-[rgba(0,0,0,0.3)]">
         <h3 class="font-sig text-[16px] font-semibold text-white">{{blog.title}}</h3>
         <h3 class="font-sig text-[14px] font-normal text-white">By {{ blog.contributor }}</h3>
         <a href="" class="text-white font-sig text-[14px]">Read More..</a> 
