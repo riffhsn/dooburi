@@ -1,7 +1,7 @@
 <template>
     <section class="banner bg-center bg-cover bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
        <div class="flex">
- <video class="sm:w-fit md:w-full relative flex mx-auto" autoplay loop muted src="../assets//videos/artpiece-small.mp4" typeof="video/mp4">     
+ <video class="w-full relative flex mx-auto" autoplay loop muted src="../assets//videos/artpiece-small.mp4" typeof="video/mp4">     
 </video>
  <div class="banner_text md:w-[50%] font-sig  text-white absolute top-[25%] left-[5%]">
         <h1 class="text-6xl text-white font-sig">Welcome to Dooburi!</h1>
