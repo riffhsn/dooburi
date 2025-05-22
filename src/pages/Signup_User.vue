@@ -44,13 +44,35 @@
     </div>
     
     </section>
-    
-    
+        
     </template>
     
     <script setup>
     
     import Nav from '@/components/Nav.vue';
     import Footer from '@/components/Footer.vue';
+
+    import axios from 'axios';
+    import { ref } from 'vue';
+
+    const name = 'ref'
+    const email = 'ref'
+    const password = 'ref'
+
+    const register = () => {
+        axios.post('http://127.0.0.1:8000/api/customer/register'), {
+            name: name.value,
+            email: email.value,
+            password: bcrypt(password.value),
+        }
+        .then(
+            response => {
+            console.log(response)
+            } 
+        )
+        .catch(error=>{
+            console.log(error);
+        })
+    }
 
     </script>

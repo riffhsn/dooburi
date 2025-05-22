@@ -4,7 +4,7 @@
 
 <section class="py-[50px]">
 <div class="flex items-center">
-<div class="w-[50%] py-5">
+<div class="md:w-[50%] py-5">
     <img :src="explore_1" class="py-5">
 </div>
 <div>
@@ -13,19 +13,19 @@
     </div>
             <div class="flex gap-x-10 justify-center text-center">
             <div>
-                <h3 class="font-sig font-semibold text-gray-200 text-4xl px-5 py-5 bg-[rgba(0,0,0,0.5)] rounded-2xl">{{ displayDays }}</h3> 
+                <h3 class="font-sig font-semibold text-gray-200 text-2xl md:text-4xl px-5 py-5 bg-[rgba(0,0,0,0.5)] rounded-2xl">{{ displayDays }}</h3> 
                 <p class="font-sig font-semibold text-[20px] text-gray-500">Days</p>
             </div>
             <div>
-                <h3 class="font-sig font-semibold text-4xl text-gray-200 px-5 py-5 bg-[rgba(0,0,0,0.5)] rounded-2xl">{{ displayHours }}</h3> 
+                <h3 class="font-sig font-semibold text-2xl md:text-4xl text-gray-200 px-5 py-5 bg-[rgba(0,0,0,0.5)] rounded-2xl">{{ displayHours }}</h3> 
                 <p class="font-sig font-semibold text-[20px] text-gray-500">Hours</p>
             </div>          
                 <div>
-                <h3 class="font-sig font-semibold text-4xl text-gray-200 px-5 py-5 bg-[rgba(0,0,0,0.5)] rounded-2xl">{{ displayMinutes }}</h3> 
+                <h3 class="font-sig font-semibold text-2xl md:text-4xl text-gray-200 px-5 py-5 bg-[rgba(0,0,0,0.5)] rounded-2xl">{{ displayMinutes }}</h3> 
                 <p class="font-sig font-semibold text-[20px] text-gray-500">Minutes</p>
             </div>
                 <div>
-                <h3 class="font-sig font-semibold text-4xl text-gray-200 px-5 py-5 bg-[rgba(0,0,0,0.5)] rounded-2xl">{{ displaySeconds }}</h3> 
+                <h3 class="font-sig font-semibold text-2xl md:text-4xl text-gray-200 px-5 py-5 bg-[rgba(0,0,0,0.5)] rounded-2xl">{{ displaySeconds }}</h3> 
                 <p class="font-sig font-semibold text-[20px] text-gray-500">Seconds</p>
             </div>
         </div>

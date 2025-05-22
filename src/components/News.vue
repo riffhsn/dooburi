@@ -1,9 +1,9 @@
 <template>
-<section class="py-[50px] px-[50px] bg-center bg-cover bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
+<section class="py-[20px] md:py-[50px] px-[50px] bg-center bg-cover bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
 
-<h2 class="text-center text-6xl animate-pulse py-3">News</h2>
+<h2 class="text-center text-5xl md:text-6xl animate-pulse py-3">News</h2>
 <h3 class="font-sig text-[16px] font-semibold text-center pb-5">Find out the latest news in the world of art around the globe.</h3>
-    <div class="grid grid-cols-4 gap-x-10">
+    <div class="grid md:grid-cols-4 gap-x-10 gap-y-10">
         <div v-for="news in news" :key="news" class="relative">
             <div>
                 <img :src="news.image" class="w-[300px] h-[250px]">

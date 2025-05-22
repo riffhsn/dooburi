@@ -1,8 +1,8 @@
 <template>
-<section class="categories py-[50px] px-[50px] bg-center bg-cover bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
+<section class="hidden categories py-[20px] md:py-[50px] px-[50px] bg-center bg-cover bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
     <div class="container">
  <div>
-        <h2 class="text-center text-6xl animate-pulse py-10">Featured Artists</h2>
+        <h2 class="text-center md:text-6xl animate-pulse py-10">Featured Artists</h2>
     </div>       
     <div class="grid grid-cols-3 space-y-10 gap-x-10">
                         <div class="w-fit" v-for="featuredartist in featuredartists" :key="featuredcoll">

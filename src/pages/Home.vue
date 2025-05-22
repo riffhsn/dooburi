@@ -3,19 +3,19 @@
 <Banner></Banner>
 <Categories></Categories>
 <About></About>
-<FeaturedCollections></FeaturedCollections>
+<ImageSlider></ImageSlider>
 <FeaturedArtists></FeaturedArtists>
-<Countdown_section></Countdown_section>
+<Countdownsection></Countdownsection>
 <Videos></Videos>
 <News></News>
 <Blog></Blog>
 
-<section class="testimonial pb-20 pt-10 bg-cover bg-center bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
+<section class="testimonial px-10 pb-20 pt-10 bg-cover bg-center bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
 <div class="container">
     <div class="testimonial_heading">
         <h2 class="text-4xl font-bold text-center pb-10">Here's what our members are saying about us!</h2>
     </div>
-    <div class="grid grid-cols-2 gap-x-10">
+    <div class="grid gap-y-10 md:grid-cols-2 md:gap-x-10">
         <div class="testimonial_item bg-[rgba(0,0,0,0.3)] py-5 px-5 rounded-[10px] text-white">
             <div class="testimonial_text flex">
                 <img :src="testimonial_1" class="w-[100px] rounded-[50%] pt-10">
@@ -50,8 +50,7 @@
             <i class="fa-solid fa-star text-amber-400"></i>
             <i class="fa-solid fa-star text-amber-400"></i>
             <i class="fa-solid fa-star text-amber-400"></i>
-            <i class="fa-solid fa-star-half text-amber-400"></i>            </div>
-
+            <i class="fa-solid fa-star-half text-amber-400"></i></div>
         </div>
       
     </div>
@@ -60,7 +59,6 @@
 
 <Newsletter></Newsletter>
 
-
 </template>
 
 <script setup>
@@ -68,12 +66,12 @@
 import Banner from '@/components/Banner.vue';
 import Categories from '@/components/Categories.vue';
 import About from '@/components/About.vue';
-import FeaturedCollections from '@/components/FeaturedCollections.vue';
+import ImageSlider from '@/components/ImageSlider.vue';
 import testimonial_1 from '@/assets/images/testimonial_1.jpg'
 import testimonial_2 from '@/assets/images/testimonial_2.jpg'
 import Blog from '@/components/Blog.vue';
 import Countdown from '@/components/Countdown.vue';
-import Countdown_section from '@/components/Countdown_section.vue';
+import Countdownsection from '@/components/Countdownsection.vue';
 import Newsletter from '@/components/Newsletter.vue'
 import News from '@/components/News.vue';
 import FeaturedArtists from '@/components/FeaturedArtists.vue';

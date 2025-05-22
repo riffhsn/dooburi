@@ -15,8 +15,7 @@
                 <RouterLink to="/sculptures"><li><a>Sculptures</a></li></RouterLink>
                 </ul>
                 </li>
-              <li><a>Artists</a></li>
-             <li><a>Featured Collections</a></li>
+              <RouterLink to="/artists"><li><a>Artists</a></li></RouterLink>
              <li><a>Videos</a></li>
              <li> <a href="#">Blogs</a> </li>
             </ul>

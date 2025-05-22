@@ -39,7 +39,4 @@
 
 <script setup>
 
-
-
-
 </script>
