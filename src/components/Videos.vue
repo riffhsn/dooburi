@@ -6,11 +6,11 @@
 <p class="font-sig text-[16px] font-semibold text-center pb-5">At Dooburi, we interview renowned artists to discuss their artwork. Watch the videos below to connect with artists. </p>
 
 <div class="grid grid-cols-1 gap-y-10 md:grid-cols-3 gap-x-10">
-<iframe class="" width="full" height="full" src="https://www.youtube.com/embed/LVbGznbqfyw?si=SQbfG3yZD7q1VLfK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="" width="400px" height="300px" src="https://www.youtube.com/embed/LVbGznbqfyw?si=SQbfG3yZD7q1VLfK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="full" height="full" src="https://www.youtube.com/embed/tmTzKhSc_h4?si=LoAbPE8eLdVybxOB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="400px" height="300px" src="https://www.youtube.com/embed/tmTzKhSc_h4?si=LoAbPE8eLdVybxOB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="full" height="full" src="https://www.youtube.com/embed/Y65_Qs1Wq0w?si=jvJwqOKhqMQ1j8cv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="400px" height="300px" src="https://www.youtube.com/embed/Y65_Qs1Wq0w?si=jvJwqOKhqMQ1j8cv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 </Section>

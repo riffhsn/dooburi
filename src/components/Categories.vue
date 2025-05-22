@@ -1,6 +1,6 @@
 <template>
 
-<section class="hidden categories py-[120px] px-[50px] bg-center bg-cover bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
+<section class="categories py-[120px] px-[50px] bg-center bg-cover bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
             <div class="grid grid-cols-4 space-y-10 gap-x-10 justify-center">
             <div class="w-full" v-for="category in categories" :key="category" >
         <div class="shadow-black shadow-2xl relative rounded-[10px]">

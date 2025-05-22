@@ -6,7 +6,7 @@
   <div class="w-fit mx-auto px-4 relative">
     <div class="flex flex-col md:flex-row items-center border border-gray-500 rounded-lg shadow-xl py-10 bg-[#dbd0a7e3] opacity-95 overflow-hidden">
       <!-- Image Section -->
-      <div class="w-full md:w-2/3 h-64 md:h-auto">
+      <div class="w-[500px] md:w-2/3 h-64 md:h-auto">
         <img :src="slides[currentIndex].image" alt="Slide Image" class="w-full h-full object-cover" />
       </div>
       <!-- Text Section -->
@@ -43,14 +43,16 @@ const slides = ref([
     description: 'Patrick is a painter with 10 years of experience in the creative field. He has produced some great art pieces to display his expertise. ',
   },
   {
-    image: 'https://images.pexels.com/photos/1415268/pexels-photo-1415268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    title: 'Slide Two',
-    description: 'This is the second slide description.',
+    image: 'https://images.pexels.com/photos/6714316/pexels-photo-6714316.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&dpr=1',
+    title: 'Adam Troy',
+    profession: 'Sculptor',
+    description: 'Adam is a sculptor with 10 years of experience in the creative field. He has produced some great art pieces to display his expertise.',
   },
   {
-    image: 'https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    title: 'Slide Three',
-    description: 'This is the third slide description.',
+    image: 'https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&dpr=1',
+    title: 'Anna Wintour',
+    profession: 'Photographer',
+    description: 'Anna is a photographer with 10 years of experience in the creative field. He has produced some great art pieces to display his expertise.',
   },
 ])
 
