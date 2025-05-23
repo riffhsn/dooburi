@@ -3,8 +3,8 @@
        <div class="flex">
  <video class="w-full h-auto object-cover relative flex mx-auto" autoplay loop muted src="../assets//videos/artpiece-small.mp4" typeof="video/mp4">     
 </video>
-<div class="flex justify-between">
- <div class="banner_text w-[50%] font-sig  text-white absolute top-[5%] left-[10%] md:top-[25%] md:left-[5%]">
+<div class="flex justify-between items-center">
+ <div class="banner_text w-[50%] font-sig  text-white absolute top-[25%] left-[5%]">
         <h1 class="text-xl font-semibold md:text-6xl text-white font-sig">Welcome to Dooburi!</h1>
         <p class="w-[200px] md:w-[400px] pt-5 font-sig">We are a marketplace for curating the best art pieces in Bangladesh. Explore art pieces from a plethora of photographs, paintings and sculptures by renowned artists.
         </p>
