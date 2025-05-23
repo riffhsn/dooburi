@@ -3,11 +3,11 @@
 <div class="container">
 <div class="subscribe_header">
     <h2 class="font-sig font-semibold text-3xl text-black text-center flex justify-center py-5">SUBSCRIBE To Our Newsletter</h2>
-    <p class="flex justify-center font-sig font-semibold text-[16px] pb-5">Subscribe to our Newsletter to get the latest updates on your favorite artists, artworks and blogs.
+    <p class="flex text-center md:justify-center font-sig font-semibold text-[16px] pb-5">Subscribe to our Newsletter to get the latest updates on your favorite artists, artworks and blogs.
     </p>
     <form method="" action="" class="text-center">
         <div>
-            <input placeholder="Enter Full Name" class="w-1/2 border-1 border-gray-500 py-3 px-3 rounded-[10px] outline-0">
+            <input placeholder="Enter Full Name" class="w-full md:w-1/2 border-1 border-gray-500 py-3 px-3 rounded-[10px] outline-0">
         </div>
         <div>
             <input placeholder="Enter Email" class="mt-5 w-1/2 border-1 border-gray-500 py-3 px-3 rounded-[10px] outline-0">
