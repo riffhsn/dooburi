@@ -5,13 +5,13 @@
 </video>
 <div class="flex justify-between items-center">
  <div class="banner_text w-[50%] font-sig  text-white absolute top-[25%] left-[5%]">
-        <h1 class="text-xl font-semibold md:text-6xl text-white font-sig">Welcome to Dooburi!</h1>
+        <h1 class="font-semibold text-6xl text-white font-sig">Welcome to Dooburi!</h1>
         <p class="w-[400px] pt-5 font-sig">We are a marketplace for curating the best art pieces in Bangladesh. Explore art pieces from a plethora of photographs, paintings and sculptures by renowned artists.
         </p>
       <RouterLink to="/paintings"><button type="submit" class="font-sig font-semibold bg-[rgba(0,0,0,0.6)] p-10 text-[20px] mx-au
          text-white shadow-2xl rounded-2xl px-10 py-3 mt-10 cursor-pointer">Explore Art Pieces</button></RouterLink>
 </div>
-        <div class="banner_artist absolute top-[25%] right-[10%] text-center pt-4">
+        <div class="banner_artist absolute top-[25%] right-[10%] text-center">
         <div class="quote">
         <h1 class="font-sig text-6xl text-white text-center w-[600px]"><i class="fa-solid fa-quote-left"></i> Reality leaves a lot to the imagination. <i class="fa-solid fa-quote-right"></i> <br></h1> 
 <span class="text-[50px] text-white font-sig text-center flex justify-center">- John Lennon</span>
