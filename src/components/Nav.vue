@@ -2,7 +2,7 @@
 
 <section class="navbar flex items-center md:py-5 bg-[#e8ddc5] font-sig">
     <div class="container">
-        <div class="nav items-center flex space-x-20 hidden md:visible">
+        <div class="nav items-center flex space-x-20">
             <div class="w-1/5">
                 <div class="flex">
             <div class="logo">
