@@ -4,10 +4,10 @@
     <h2 class="text-center text-5xl md:text-6xl animate-pulse py-10">Blogs</h2>
             <div class="flex gap-x-10">
         <div v-for="blog in blogs" :key="blog" class="relative">
-            <div >
-                <img :src="blog.image" class="w-fit">
+            <div>
+                <img :src="blog.image" class="w-[400px] h-[300px]">
             </div>
-            <div class="blog_text w-fit absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] text-center px-5 py-10 bg-[rgba(0,0,0,0.3)]">
+            <div class="blog_text w-full absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] text-center px-5 py-10 bg-[rgba(0,0,0,0.3)]">
         <h3 class="font-sig text-[16px] font-semibold text-white">{{blog.title}}</h3>
         <h3 class="font-sig text-[14px] font-normal text-white">By {{ blog.contributor }}</h3>
         <a href="" class="text-white font-sig text-[14px]">Read More..</a> 
