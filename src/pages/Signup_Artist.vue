@@ -69,7 +69,7 @@
     </div>
     <div>
         <label class="font-sig text-[14px] text-black font-semibold block py-3">Do You Offer Custom/Commissioned Work?</label>
-<div class="space-x-2">
+<div>
     <input type="checkbox" class="font-sig text-[14px] font-semibold">Yes
 </div>
 <div>
@@ -78,7 +78,7 @@
         </div>
         <div>
         <label class="font-sig text-[14px] text-black font-semibold block py-3">Shipping Capabilities:</label>
-<div class="space-x-2">
+<div class="gap-x-2">
     <input type="checkbox" class="font-sig text-[14px] font-semibold">Local Only
 </div>
 <div>
@@ -86,18 +86,6 @@
 </div>
 <div>
     <input type="checkbox" class="font-sig text-[14px] font-semibold">Both
-</div>
-</div>
-<div>
-    <h3 class="font-sig font-semibold text-[20px] pt-5">Identity Verification</h3>
-<p class="font-sig text-[14px]">(For Seller Information Only. This will not be made public.)</p>
-<div>
-    <label class="font-sig text-[14px] text-black font-semibold block py-3">National ID/Passport Number</label>
-    <input type="text" class="font-sig text-[14px] block py-3 px-5 border-1 border-[rgba(0,0,0,0.3)] w-full rounded-2xl"> 
-</div>
-<div>
-    <label class="font-sig text-[14px] text-black font-semibold block py-3">Upload Scan of Valid ID:</label>
-<input placeholder="Attach file" type="file" class="font-sig text-[14px] py-3 px-5 border-1 border-[rgba(0,0,0,0.3)] rounded-2xl"> 
 </div>
 </div>
 <div>

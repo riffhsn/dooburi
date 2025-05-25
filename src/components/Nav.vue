@@ -21,7 +21,8 @@
                 </ul>
                 </li>
               <RouterLink to="/artists"><li><a>Artists</a></li></RouterLink>
-             <li><a>Videos</a></li>
+             <li><a href="#">Videos</a></li>
+            <li> <a href="#">News</a> </li>
              <li> <a href="#">Blogs</a> </li>
             </ul>
             <form action="" method="" class="flex justify-end">

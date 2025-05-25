@@ -6,7 +6,7 @@
 <div class="flex justify-between items-center">
  <div class="banner_text w-[50%] font-sig  text-white absolute top-[25%] left-[5%]">
         <h1 class="font-semibold text-6xl text-white font-sig">Welcome to Dooburi!</h1>
-        <p class="w-[400px] pt-5 font-sig">We are a marketplace for curating the best art pieces in Bangladesh. Explore art pieces from a plethora of photographs, paintings and sculptures by renowned artists.
+        <p class="w-[400px] pt-5 font-sig text-[16px]">We are a marketplace for curating the best art pieces in Bangladesh. Explore art pieces from a plethora of photographs, paintings and sculptures by renowned artists.
         </p>
       <RouterLink to="/paintings"><button type="submit" class="font-sig font-semibold bg-[rgba(0,0,0,0.6)] p-10 text-[20px] mx-au
          text-white shadow-2xl rounded-2xl px-10 py-3 mt-10 cursor-pointer">Explore Art Pieces</button></RouterLink>
@@ -18,19 +18,17 @@
 <div>
 </div>
 </div>
-    <h2 class="font-sig font-semibold mt-8 text-[30px] text-white">Are You An Artist?</h2>
-    <h3 class="font-sig text-[16px] font-semibold text-white">Join Dooburi to exhibit your exclusive art pieces to passionate art collectors.</h3>
+    <div class="bg-[#e8ddc5] py-5 px-8 opacity-98 rounded-2xl mt-10">
+    <h2 class="font-sig font-semibold mt-8 text-[30px] text-gray-500">Are You An Artist?</h2>
+    <h3 class="font-sig text-[16px] font-semibold text-gray-500">Join Dooburi to exhibit your exclusive art pieces to passionate art collectors.</h3>
    <RouterLink to="/login"><button type="submit" class="font-sig font-semibold bg-[rgba(0,0,0,0.6)] p-10 text-[20px] mx-au
-   text-white shadow-2xl rounded-2xl px-10 py-3 mt-5 cursor-pointer">Exhibit Your Artwork</button></RouterLink>
-        <div class="container mx-auto w-[50%]"> 
-    <div class="absolute top-[20%]">
+   text-white shadow-2xl rounded-2xl px-10 py-3 mt-5 mb-5 cursor-pointer">Exhibit Your Artwork</button></RouterLink>
+    </div>  <div class="absolute top-[20%]">
 
 </div>
 </div>
 </div>
 </div>   
-</div>
-
 </section>
 </template>
 <script setup>
