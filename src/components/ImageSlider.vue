@@ -1,36 +1,48 @@
 <template>
-    <section class="py-[20px] md:py-[50px] bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
-        <div class="artist_header">
-            <h2 class="text-center text-5xl md:text-6xl animate-pulse py-10">Featured Artists</h2>
-        </div>
-  <div class="w-fit mx-auto px-4 relative">
-    <div class="flex flex-col md:flex-row items-center border border-gray-500 rounded-lg shadow-xl py-10 bg-[#dbd0a7e3] opacity-95 overflow-hidden">
-      <!-- Image Section -->
-      <div class="w-[500px] md:w-2/3 h-64 md:h-auto">
-        <img :src="slides[currentIndex].image" alt="Slide Image" class="w-full h-full object-cover" />
-      </div>
-      <!-- Text Section -->
-      <div class="w-full md:w-1/3 p-6">
-        <h2 class="text-2xl font-sig font-bold mb-2">{{ slides[currentIndex].title }}</h2>
-        <h2 class="text-xl font-sig font-bold mb-2">{{ slides[currentIndex].profession }}</h2>
-        <p class="text-gray-600 font-sig">{{ slides[currentIndex].description }}</p>
-        <RouterLink><button type=""></button></RouterLink>
+  <section class="py-[20px] md:py-[50px] bg-cover bg-center bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
+    <div class="artist_header">
+      <h2 class="text-center text-3xl sm:text-4xl md:text-6xl animate-pulse py-6 md:py-10">Featured Artists</h2>
+    </div>
 
-        <!-- Navigation Buttons -->
-        <div class="flex space-x-2">
-          <button @click="prevSlide" class="bg-gray-200 hover:bg-[#dbd0a7e3] rounded-full p-2 absolute left-0 top-[50%]">
-            <span class="text-[20px] ">&larr;</span>
-          </button>
-          <button @click="nextSlide" class="bg-gray-200 hover:bg-[#dbd0a7e3] rounded-full p-2 absolute right-0 top-[50%]">
-            <span>&rarr;</span>
-          </button>
+    <div class="w-full sm:w-fit mx-auto px-4 relative">
+      <div class="flex flex-col md:flex-row items-center border border-gray-500 rounded-lg shadow-xl py-6 md:py-10 bg-[#dbd0a7e3] opacity-95 overflow-hidden">
+        <!-- Image Section -->
+        <div class="w-full md:w-2/3 h-[220px] sm:h-[300px] md:h-auto">
+          <img :src="slides[currentIndex].image" alt="Slide Image" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Text Section -->
+        <div class="w-full md:w-1/3 p-4 md:p-6 text-center md:text-left">
+          <h2 class="text-xl sm:text-2xl font-sig font-bold mb-2">{{ slides[currentIndex].title }}</h2>
+          <h2 class="text-lg sm:text-xl font-sig font-bold mb-2">{{ slides[currentIndex].profession }}</h2>
+          <p class="text-gray-600 font-sig text-sm sm:text-base">{{ slides[currentIndex].description }}</p>
+          <RouterLink><button type=""></button></RouterLink>
+
+          <!-- Navigation Buttons -->
+          <div class="hidden md:flex space-x-2">
+            <button @click="prevSlide" class="bg-gray-200 hover:bg-[#dbd0a7e3] rounded-full p-2 absolute left-0 top-1/2 transform -translate-y-1/2">
+              <span class="text-[20px]">&larr;</span>
+            </button>
+            <button @click="nextSlide" class="bg-gray-200 hover:bg-[#dbd0a7e3] rounded-full p-2 absolute right-0 top-1/2 transform -translate-y-1/2">
+              <span class="text-[20px]">&rarr;</span>
+            </button>
+          </div>
+
+          <!-- Mobile Nav Buttons -->
+          <div class="flex justify-center space-x-4 pt-4 md:hidden">
+            <button @click="prevSlide" class="bg-gray-200 hover:bg-[#dbd0a7e3] rounded-full p-2">
+              <span class="text-[20px]">&larr;</span>
+            </button>
+            <button @click="nextSlide" class="bg-gray-200 hover:bg-[#dbd0a7e3] rounded-full p-2">
+              <span class="text-[20px]">&rarr;</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-      </section>
-
+  </section>
 </template>
+
 
 <script setup>
 import { ref } from 'vue'

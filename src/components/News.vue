@@ -1,25 +1,50 @@
 <template>
-<section class="py-[20px] md:py-[50px] px-[50px] bg-center bg-cover bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
+  <section
+    class="py-[20px] md:py-[50px] px-[30px] bg-center bg-cover"
+    style="background-image: url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')"
+  >
+    <h2 class="text-center text-5xl md:text-6xl animate-pulse py-3">News</h2>
+    <h3 class="font-sig text-[16px] font-semibold text-center pb-5">
+      Find out the latest news in the world of art around the globe.
+    </h3>
 
-<h2 class="text-center text-5xl md:text-6xl animate-pulse py-3">News</h2>
-<h3 class="font-sig text-[16px] font-semibold text-center pb-5">Find out the latest news in the world of art around the globe.</h3>
-    <div class="grid md:grid-cols-4 gap-x-10 gap-y-10">
-        <div v-for="news in news" :key="news" class="relative">
-            <div>
-                <img :src="news.image" class="w-[300px] h-[250px]">
-            </div>
-            <div class="news_text w-[220px] absolute top-[18%] left-[12%] text-center px-5 py-5 bg-[rgba(0,0,0,0.3)]">
-        <h3 class="font-sig text-[14px] font-semibold text-white">{{news.title}}</h3>
-        <h3 class="font-sig text-[12px] font-normal text-white">By {{ news.contributor }}</h3>
-        <a href="" class="text-white font-sig text-[14px]">Read More..</a> 
-            </div>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 
+             gap-x-10 gap-y-10 
+             justify-center place-items-center items-center"
+    >
+      <div
+        v-for="newsItem in news"
+        :key="newsItem.title"
+        class="www relative w-[300px] h-[250px] md:w-[260px] lg:w-[260px] md:h-[260px] lg:h-[250px]"
+      >
+        <img
+          :src="newsItem.image"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+
+        <div
+          class="news_text w-[220px] md:w-[180px] lg:w-[220px] absolute top-[18%] 
+                 left-1/2 -translate-x-1/2 
+                 lg:left-[7%] md:left-[15%] md:translate-x-0 
+                 text-center px-5 py-5 
+                 bg-[rgba(0,0,0,0.3)]"
+        >
+          <h3 class="font-sig text-[14px] font-semibold text-white">
+            {{ newsItem.title }}
+          </h3>
+          <h3 class="font-sig text-[12px] font-normal text-white">
+            By {{ newsItem.contributor }}
+          </h3>
+          <a href="#" class="text-white font-sig text-[14px]">Read More..</a>
+        </div>
+      </div>
     </div>
-    </div>
-
-</section>
-
+  </section>
 </template>
 
+  
 <script setup>
 
 import { ref } from 'vue';
@@ -53,3 +78,17 @@ const news = ref([{
 
 
 </script>
+
+
+
+<style>
+@media (min-width: 769px) and (max-width: 1024px) {
+.www{
+  width:220px !important;
+}
+.news_text{
+  width: 190px;
+  font-size: 10px;
+}
+}
+</style>

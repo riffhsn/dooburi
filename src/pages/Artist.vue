@@ -4,7 +4,7 @@
         <div class="grid grid-cols-1 flex-wrap gap-y-15">
             <div v-for="photo in photos">
                 <div class="flex border-gray-400 border-1 bg-[url('https://images.pexels.com/photos/7599587/pexels-photo-7599587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
-                    <div class="w-1/2">
+                     <div class="w-1/2">
                     <div class="relative group:hover cursor-pointer">
                     <div class="item text-center py-10 px-5 rounded-[4px] shadow-2xl">
                     <img :src="photo.image">

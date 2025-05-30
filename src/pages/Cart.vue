@@ -1,70 +1,126 @@
 <template>
-
-    <section class="Cart pb-[110px] pt-[50px]">
-    <div class="container">
-        <div><h2 class="text-center text-5xl py-10">Your Cart</h2>
+    <section class="Cart pt-10 pb-24 sm:pt-12 sm:pb-28">
+      <div class="container mx-auto px-4">
+        <!-- Title -->
+        <div>
+          <h2 class="text-center text-3xl sm:text-4xl md:text-5xl py-6 sm:py-10">Your Cart</h2>
         </div>
-        <div class="flex shadow-xl">
-            <div class="w-[25%] flex shadow-custom">
-                <h3 class="text-[16px] font-popo leading-6 py-6 pl-[40px]">Product</h3>
+  
+        <!-- Header Row -->
+        <div class="hidden md:flex shadow-xl">
+          <div class="w-1/4 flex shadow-custom">
+            <h3 class="text-sm md:text-base font-popo leading-6 py-6 pl-6">Product</h3>
+          </div>
+          <div class="w-1/4 flex justify-center shadow-custom">
+            <h3 class="text-sm md:text-base font-popo leading-6 py-6">Price</h3>
+          </div>
+          <div class="w-1/4 flex justify-center shadow-custom">
+            <h3 class="text-sm md:text-base font-popo leading-6 py-6">Quantity</h3>
+          </div>
+          <div class="w-1/4 flex justify-end shadow-custom">
+            <h3 class="text-sm md:text-base font-popo leading-6 py-6 pr-6">Subtotal</h3>
+          </div>
         </div>
-        <div class="w-[25%] flex justify-center shadow-custom">
-                <h3 class="text-[16px] font-popo leading-6 shadow-2xl py-6">Price</h3>
-        </div>
-        <div class="w-[25%] flex justify-center shadow-custom">
-                <h3 class="text-[16px] font-popo leading-6 py-6">Quantity</h3>
-                </div>
-                <div class="w-[25%] flex justify-end shadow-custom">
-                <h3 class="text-[16px] font-popo leading-6 py-6 pr-10">Subtotal</h3>
-        </div>
-        </div>
-        <div v-for="(cart, index) in carts" class="flex py-8 px-10 shadow-xl mt-10">
-            <div class="flex w-1/4 items-center">
-                <img :src="cart.image">
-                <h3 class="text-[16px] font-popo leading-6 pl-5">{{ cart.name }}</h3>
+  
+        <!-- Cart Items -->
+        <div
+          v-for="(cart, index) in carts"
+          :key="index"
+          class="flex flex-col md:flex-row py-6 px-4 sm:px-8 shadow-xl mt-8 md:items-center"
+        >
+          <!-- Product -->
+          <div class="w-full md:w-1/4 flex items-center mb-4 md:mb-0">
+            <img :src="cart.image" class="w-20 h-auto" />
+            <h3 class="text-sm md:text-base font-popo leading-6 pl-4">{{ cart.name }}</h3>
+          </div>
+  
+          <!-- Price -->
+          <div class="w-full md:w-1/4 flex justify-between md:justify-center items-center mb-4 md:mb-0">
+            <span class="block md:hidden font-medium">Price:</span>
+            <h3 class="text-sm md:text-base font-popo">${{ cart.price }}</h3>
+          </div>
+  
+          <!-- Quantity -->
+          <div class="w-full md:w-1/4 flex justify-between md:justify-center items-center mb-4 md:mb-0">
+            <span class="block md:hidden font-medium">Qty:</span>
+            <div class="flex border border-gray-400 rounded px-3 py-1 items-center">
+              <input
+                type="text"
+                :value="cart.count"
+                class="w-12 text-center text-sm outline-none bg-transparent"
+              />
+              <div class="flex flex-col ml-2 space-y-1">
+                <i
+                  @click="increment(index)"
+                  class="fa-solid fa-chevron-up text-xs cursor-pointer"
+                ></i>
+                <i
+                  @click="decrement(index)"
+                  class="fa-solid fa-chevron-down text-xs cursor-pointer"
+                ></i>
+              </div>
             </div>
-            <div class="flex w-1/4 items-center justify-center">
-                <h3 class="text-[16px] font-popo leading-6">${{ cart.price }}</h3>
-            </div>
-            <div class="flex w-1/4 items-center justify-center mt-10">
-                <div class="flex border-[1.5px] border-[rgba(0,0,0,0.4)] rounded-[4px] px-3 py-1">
-                <input type="text" :value="cart.count" class="w-full outline-0">    
-                <div>
-                <i @click="increment(index)" class="fa-solid fa-chevron-up w-[5px] h-[8.5px]"></i>
-                <i @click="decrement(index)" class="fa-solid fa-chevron-down w-[5px] h-[8.5px]"></i>
-            </div>
-                </div>
-            </div>
-            <div class="flex w-1/4 items-center justify-end">
-                <h3 class="text-[16px] font-popo leading-6 pr-[40px]">${{ cart.price * cart.count }}</h3>
-            </div>
+          </div>
+  
+          <!-- Subtotal -->
+          <div class="w-full md:w-1/4 flex justify-between md:justify-end items-center">
+            <span class="block md:hidden font-medium">Subtotal:</span>
+            <h3 class="text-sm md:text-base font-popo pr-0 md:pr-10">
+              ${{ cart.price * cart.count }}
+            </h3>
+          </div>
         </div>
-        <div class="flex justify-between">
-            <button type="submit" class="bg-[#dbd0a7e3] text-[16px] text-[rgba(0,0,0,0.5)] font-popo leading-6 font-medium px-12 py-4 rounded-[4px] mt-6">Return To Shop</button>
-            <button type="submit" class="bg-[#dbd0a7e3] text-[16px] font-popo leading-6 font-medium flex px-12 py-4 text-[rgba(0,0,0,0.5)] rounded-[4px] mt-6">Update Cart</button>
+  
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row justify-between gap-4 mt-8">
+          <button
+            type="submit"
+            class="bg-[#dbd0a7e3] text-sm sm:text-base text-gray-600 font-popo font-medium px-6 py-3 rounded-md"
+          >
+            Return To Shop
+          </button>
+          <button
+            type="submit"
+            class="bg-[#dbd0a7e3] text-sm sm:text-base text-gray-600 font-popo font-medium px-6 py-3 rounded-md"
+          >
+            Update Cart
+          </button>
         </div>
-        <div class="flex justify-end">
-            <div class="w-1/3 py-8 px-6 border-[1.5px] rounded-[4px] mt-[112px]">
-            <h2 class="text-[20px] font-popo leading-7 font-medium pb-6">Cart Total</h2>
-            <div class="flex justify-between pb-4 border-b-1 border-[rgba(0,0,0,0.4)]">
-                <h3 class="font-popo text-[16px] leading-6">Subtotal:</h3>
-                <h3 class="font-popo text-[16px] leading-6">${{ subtotal }}</h3>
+  
+        <!-- Cart Summary -->
+        <div class="flex justify-center md:justify-end mt-16">
+          <div class="w-full sm:w-2/3 md:w-1/3 border rounded p-5">
+            <h2 class="text-lg md:text-xl font-popo font-medium pb-4">Cart Total</h2>
+  
+            <div class="flex justify-between border-b border-gray-400 pb-2 mb-2">
+              <h3 class="text-sm md:text-base font-popo">Subtotal:</h3>
+              <h3 class="text-sm md:text-base font-popo">${{ subtotal }}</h3>
             </div>
-            <div class="flex justify-between py-2 border-b-1 border-[rgba(0,0,0,0.4)]">
-                <h3 class="font-popo text-[16px] leading-6">Shipping:</h3>
-                <h3 class="font-popo text-[16px] leading-6">Free</h3>
+  
+            <div class="flex justify-between border-b border-gray-400 py-2">
+              <h3 class="text-sm md:text-base font-popo">Shipping:</h3>
+              <h3 class="text-sm md:text-base font-popo">Free</h3>
             </div>
-            <div class="flex justify-between py-2 border-b-1 border-[rgba(0,0,0,0.4)]">
-                <h3 class="font-popo text-[16px] leading-6">Total:</h3>
-                <h3 class="font-popo text-[16px] leading-6">${{ subtotal }}</h3>
+  
+            <div class="flex justify-between border-b border-gray-400 py-2">
+              <h3 class="text-sm md:text-base font-popo">Total:</h3>
+              <h3 class="text-sm md:text-base font-popo">${{ subtotal }}</h3>
             </div>
-           <RouterLink to="/checkout"><button type="submit" class="bg-[#dbd0a7e3] font-sig text-[16px] font-medium text-gray-500 cursor-pointer rounded-[4px] py-4 px-12 mt-4 flex mx-auto">Proceed to checkout</button></RouterLink> 
-        </div> 
+  
+            <RouterLink to="/checkout">
+              <button
+                type="submit"
+                class="bg-[#dbd0a7e3] font-sig text-sm sm:text-base font-medium text-gray-600 rounded py-3 px-8 mt-6 w-full"
+              >
+                Proceed to checkout
+              </button>
+            </RouterLink>
+          </div>
         </div>
-        </div>
+      </div>
     </section>
-    
-    </template>
+  </template>
+  
     
     <script setup>
        

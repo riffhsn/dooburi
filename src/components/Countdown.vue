@@ -4,15 +4,15 @@
 
 <section class="py-[50px]">
 <div class="flex items-center">
-<div class="md:w-[50%] py-5">
+<div class="md:w-[50%] py-5 ">
     <img :src="explore_1" class="py-5">
 </div>
 <div>
     <div>
-        <h3 class="font-sig text-[20px] font-semibold text-center py-5 text-black">Grab the Curator's Pick of the Day before the deal ends!</h3>
+        <h3 class="font-sig text-[20px] font-semibold text-center mt-[-80px] sm:mt-[-70px] md:mt-[-70px] lg:mt-0 py-5 text-black">Grab the Curator's Pick of the Day before the deal ends!</h3>
     </div>
-            <div class="flex gap-x-10 justify-center text-center">
-            <div>
+            <div class="flex gap-x-2 sm:gap-x-4 md:gap-x-10 justify-center text-center">
+             <div>
                 <h3 class="font-sig font-semibold text-gray-200 text-2xl md:text-4xl px-5 py-5 bg-[rgba(0,0,0,0.5)] rounded-2xl">{{ displayDays }}</h3> 
                 <p class="font-sig font-semibold text-[20px] text-gray-500">Days</p>
             </div>
@@ -67,7 +67,7 @@ export default {
         showRemaining() {
             const timer = setInterval(()=>{
                 const now = new Date();
-                const end = new Date( 2025, 4, 29, 10, 10, 10);
+                const end = new Date( 2025, 5, 4, 10, 10, 10);
                 const distance =  end.getTime() - now.getTime();
 
                 if (distance <0) {

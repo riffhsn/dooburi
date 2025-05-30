@@ -1,22 +1,57 @@
 <template>
-
-<section class="blog py-[20px] md:py-[50px] px-[50px] bg-center bg-cover bg-[url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
-    <h2 class="text-center text-5xl md:text-6xl animate-pulse py-10">Blogs</h2>
-            <div class="flex gap-x-10">
-        <div v-for="blog in blogs" :key="blog" class="relative">
-            <div>
-                <img :src="blog.image" class="w-[400px] h-[300px]">
-            </div>
-            <div class="blog_text w-full absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] text-center px-5 py-10 bg-[rgba(0,0,0,0.3)]">
-        <h3 class="font-sig text-[16px] font-semibold text-white">{{blog.title}}</h3>
-        <h3 class="font-sig text-[14px] font-normal text-white">By {{ blog.contributor }}</h3>
-        <a href="" class="text-white font-sig text-[14px]">Read More..</a> 
-        <h3 class="font-sig text-white text-[12px] mt-4">Published:{{ blog_date }}</h3>
-            </div>
-    </div>
-    </div>
-   </section>
-</template>
+    <section
+      class="blog py-[20px] md:py-[50px] px-[20px] sm:px-[30px] md:px-[50px] bg-center bg-cover"
+      style="background-image: url('https://images.pexels.com/photos/9809060/pexels-photo-9809060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')"
+    >
+      <h2 class="text-center text-5xl md:text-6xl animate-pulse py-10">Blogs</h2>
+  
+      <div
+        class="grid 
+               grid-cols-1 
+               sm:grid-cols-2 
+               md:grid-cols-2 
+               lg:grid-cols-4 
+               gap-y-10 gap-x-6 
+               md:gap-x-5 md:gap-y-8 
+                justify-center"
+      >
+        <div
+          v-for="blog in blogs"
+          :key="blog"
+          class="ww relative mx-auto
+                 w-[300px] 
+                 
+                 sm:w-[280px] sm:h-[250px]
+                 md:w-[280px] md:h-[260px]
+                 lg:w-[280px] lg:h-[320px]"
+        >
+          <img
+            :src="blog.image"
+            alt=""
+             class="w-full h-full object-cover"
+          />
+  
+          <div
+            class="blog_text w-[300px] h-[160px] sm:w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center px-5 py-10 bg-[rgba(0,0,0,0.3)]"
+          >
+            <h3 class="font-sig text-[12px] sm:text-[16px] font-semibold text-white">
+              {{ blog.title }}
+            </h3>
+            <h3 class="font-sig text-[14px] font-normal text-white">
+              By {{ blog.contributor }}
+            </h3>
+            <a href="#" class="text-white font-sig text-[14px]">Read More..</a>
+            <h3 class="font-sig text-white text-[12px] mt-4">
+              Published: {{ blog_date }}
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
+  
+  
+  
 
 <script setup>
 import { ref } from 'vue';
@@ -56,3 +91,15 @@ const blogs = ref([{
 const blog_date = new Date();
 
 </script>
+
+<style>
+@media (min-width: 769px) and (max-width: 1024px) {
+.ww{
+  height: 300px;
+  width: 200px;
+}
+.blog_text{
+  height:230px ;
+}
+}
+</style>
